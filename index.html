@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f10b697e64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <noscript>Please enable JavaScript to view the full functionality of this site.</noscript>
+
+    <div id="header">
+        <div class="container">
+          <nav>
+            <img src="images/Journey-logo-white-sq-shadow-700W.png" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark"  onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav> 
+          <div class="header-text">
+            <p>IT Assistant</p>
+            <h1>Hi I'm <span> Chrispine</span><br> Otieno from Kenya</h1>
+          </div> 
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WIN_20230310_07_15_44_Pro-removebg-preview.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Motivated and tech-savvy ICT diploma student with a solid foundation in information technology and website development. 
+                        Eager to apply academic knowledge and hands-on project experience to real-world scenarios. 
+                        Passionate about technology, teamwork, and continuous learning.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class= " tab-links" onclick="opentab(event,'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Network Support</span><br>Maintaining  LAN/WAN and internet connection</li>
+                            <li><span>Installation and Configuration</span><br>Installing software/configuring user accounts</li>
+                            <li><span> User training</span><br>Providing basic IT training to staff</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>Networking training at ICS Technical</li>
+                            <li><span></span><br></li>
+                            <li><span> </span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Networking basics from CISCO</li>
+                            <li><span>2026</span><br>DIPLOMA from ICS Technical</li>
+                            <li><span> </span><br></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+   <!------services-------> 
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Network Support</h2>
+                <p>I offer maintainance of LAN/WAN,internet connection and wireless networks
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2> Installation and Configuration</h2>
+                <p>I Install software,Set up new computers,configure user accounts and connect systems to networks
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>User training</h2>
+                <p>I provide basic IT training to staff on software use and best practices of cybersecurity
+
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+        
+    </div>
+   </div>
+   <!------portfolio------->  
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Ethernet cables neatly arranged and connected to  switch</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work c.jpg">
+                <div class="layer">
+                    <h3>Maintainance</h3>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work b.jfif" >
+                <div class="layer">
+                    <h3>User training</h3>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+   </div>
+    <!------contact-------> 
+    <div id="contact">
+        <div class="container">
+           <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@chrispine1205@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0111679806</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/Chrispine_Otieno_CV_2.pdf"    download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="5" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+                </form>
+                <span id="msg"> 
+                </span>
+
+            </div>
+           </div> 
+        </div>
+        <div class="Copyright">
+            <p>Copyright © Portfolio. Made with <i class="fa-solid fa-heart"></i> by Chrispine Otieno</p>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js">
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfSKKKRs4lOWjlz_l46-PExt-9xD0hJDPA70gkciB-9RDyzbIsXoVQCzBsljV9Q3AYEQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html> 
